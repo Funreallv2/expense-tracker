@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { TransContext } from './ExpenseTracker'
 
 function Balance() {
-  const { temp } = useContext(TransContext)
+  const { addToTrans } = useContext(TransContext)
 
 
   return (

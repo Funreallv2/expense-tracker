@@ -10,6 +10,7 @@ function ExpenseTracker() {
 
 
   function addToTrans(transaction) {
+    let lastTrans = {...transaction, id: trans.length}
     setTrans(t => [...t, transaction])
   }
 
