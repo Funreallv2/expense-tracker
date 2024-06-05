@@ -10,32 +10,36 @@ function ExpenseTracker() {
   const [trans, setTrans] = useState([
     { 
       amount: 50,
-      desc: "car"
+      desc: "car",
+      id: 0,    
     },{
       amount: -20,
-      desc: "not car"
+      desc: "not car",
+      id: 1,  
     },{
       amount: -10,
-      desc: "yes car"
+      desc: "yes car",
+      id: 2,  
     },{
       amount: 10,
-      desc: "def car"
+      desc: "def car",
+      id: 3,    
     }
-
   ])
 
-
+  
   function addToTrans(transaction) {
     let newTrans = {...transaction, id: uuidv4()}
     setTrans(t => [...t, newTrans])
   }
 
-  function removeFromTrans(transaction) {
+  // Removes from transactions by ID
+  function removeFromTrans(transactionId) {
     let tempArr = [...trans]
-    tempArr.filter((trans, index) => {
-      trans.id != transaction
+    let newArr = tempArr.filter((trans, index) => {
+      return trans.id != transactionId
     })
-    setTrans(t => tempArr)
+    setTrans(t => newArr)
   }
 
   function handleClick () {
