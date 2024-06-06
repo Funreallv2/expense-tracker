@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "node --env-file=.env --watch index.js"
+    "dev": "node --env-file=config/config.env --watch index.js"
   },
   "author": "Enes Second",
   "license": "ISC",
