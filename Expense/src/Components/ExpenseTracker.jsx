@@ -7,25 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const TransContext = createContext()
 
 function ExpenseTracker() {
-  const [trans, setTrans] = useState([
-    { 
-      amount: 50,
-      desc: "car",
-      id: 0,    
-    },{
-      amount: -20,
-      desc: "not car",
-      id: 1,  
-    },{
-      amount: -10,
-      desc: "yes car",
-      id: 2,  
-    },{
-      amount: 10,
-      desc: "def car",
-      id: 3,    
-    }
-  ])
+  const [trans, setTrans] = useState([])
 
   
   function addToTrans(transaction) {

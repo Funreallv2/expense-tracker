@@ -1,0 +1,16 @@
+{
+  "name": "expense",
+  "version": "1.0.0",
+  "description": "back end for expense tracker",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --env-file=.env --watch index.js"
+  },
+  "author": "Enes Second",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
